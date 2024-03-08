@@ -38,6 +38,10 @@ export default function Home() {
           <img src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075933587-3XES53T172RDMK5M0TP3/04_sesja_narzeczenska_siedlce.jpg?format=2500w" />
         </div>
       </div>
+      <div className="relative mt-12 text-center text-4xl font-semibold">
+        <p>Cześć! Miło mi że tu jesteś</p>
+        <div className="mx-auto mt-4 h-1 w-40 rounded-full bg-yellow-600" />
+      </div>
 
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
@@ -73,11 +77,11 @@ export default function Home() {
             </div>
             <div className="relative">
               <img
-                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-6 border-4"
+                className="absolute left-1/3 top-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-6 border-4 shadow-2xl"
                 src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075933587-3XES53T172RDMK5M0TP3/04_sesja_narzeczenska_siedlce.jpg?format=2500w"
               />
               <img
-                className="absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 border-4"
+                className="absolute left-3/4 top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 border-4 shadow-2xl"
                 src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075933587-3XES53T172RDMK5M0TP3/04_sesja_narzeczenska_siedlce.jpg?format=2500w"
               />
             </div>
