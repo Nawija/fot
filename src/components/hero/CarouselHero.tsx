@@ -6,13 +6,14 @@ import "slick-carousel/slick/slick.css";
 
 export default function CarouselHero() {
   var settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 4200,
+    speed: 4000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 500,
+    autoplaySpeed: 1900,
+    pauseOnHover: false,
     fade: true,
   };
   return (
@@ -63,7 +64,7 @@ export default function CarouselHero() {
           </div>
         </div>
 
-        <div className="relative isolate h-[90vh] overflow-hidden">
+        <div className="relative isolate h-[90vh] w-full overflow-hidden">
           <img
             src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075930882-P0AKI1HUKT232XJ613ZL/01_slub_pocalunek_fotografia_siedlce.jpg?format=2500w"
             alt=""

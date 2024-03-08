@@ -30,6 +30,15 @@ export default function Home() {
     <>
       <CarouselHero />
 
+      <div className="-mt-1 flex items-center justify-center space-x-1 ">
+        <div className="w-1/2">
+          <img src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075930986-T1HL7BSSP7SU75W3K8U6/02_sesja_slubna_siedlce.jpg?format=2500w" />
+        </div>
+        <div className="w-1/2">
+          <img src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075933587-3XES53T172RDMK5M0TP3/04_sesja_narzeczenska_siedlce.jpg?format=2500w" />
+        </div>
+      </div>
+
       <div className="overflow-hidden bg-white py-24 sm:py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
@@ -62,7 +71,16 @@ export default function Home() {
                 </dl>
               </div>
             </div>
-            <div className="h-full w-full rotate-6 bg-black" />
+            <div className="relative">
+              <img
+                className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 -rotate-6 border-4"
+                src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075933587-3XES53T172RDMK5M0TP3/04_sesja_narzeczenska_siedlce.jpg?format=2500w"
+              />
+              <img
+                className="absolute left-full top-1/2 -translate-x-1/2 -translate-y-1/2 rotate-12 border-4"
+                src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1628075933587-3XES53T172RDMK5M0TP3/04_sesja_narzeczenska_siedlce.jpg?format=2500w"
+              />
+            </div>
           </div>
         </div>
       </div>
