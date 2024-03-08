@@ -12,7 +12,7 @@ export default function Header() {
     setShowMenu(!showMenu);
   }
   return (
-    <header className="bg-gradient-radial from-black to-zinc-900 p-3 text-white">
+    <header className="absolute top-0 z-50 w-full p-3 text-white">
       <nav className="mx-auto flex max-w-screen-2xl items-center justify-between">
         <Link href="/" className="font-medium uppercase md:text-lg">
           Jarek Olszewski
@@ -21,7 +21,7 @@ export default function Header() {
           Men
         </button>
         <ul
-          className={`lg: absolute left-0 top-0 z-50 flex h-full w-full -translate-x-full flex-col items-start lg:items-center lg:space-y-0 justify-center space-y-3 bg-gradient-radial  from-black to-zinc-900 lg:px-0 pl-12 text-start text-[11px] text-lg font-semibold uppercase tracking-wide text-gray-300 opacity-0 transition-all ease-linear lg:relative lg:flex lg:w-max lg:translate-x-0 lg:flex-row lg:space-x-5 lg:bg-none lg:text-xs lg:opacity-100 ${showMenu ? "translate-x-0 scale-100 opacity-100" : "scale-75 lg:scale-100"}`}
+          className={`lg: absolute left-0 top-0 z-50 flex h-full w-full -translate-x-full flex-col items-start justify-center space-y-3 bg-gradient-radial from-black to-zinc-900  pl-12 text-start text-[11px] text-lg font-semibold uppercase tracking-wide text-gray-300 opacity-0 transition-all ease-linear lg:relative lg:flex lg:w-max lg:translate-x-0 lg:flex-row lg:items-center lg:space-x-5 lg:space-y-0 lg:bg-none lg:px-0 lg:text-xs lg:opacity-100 ${showMenu ? "translate-x-0 scale-100 opacity-100" : "scale-75 lg:scale-100"}`}
         >
           <button
             className="absolute right-2 top-2 lg:hidden"

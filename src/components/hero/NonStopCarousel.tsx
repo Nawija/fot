@@ -13,7 +13,7 @@ function NonStopCarousel() {
     cssEase: "linear",
   };
   return (
-    <div className="slider-container py-10">
+    <div className="slider-container py-10 w-full overflow-hidden">
       <Slider {...settings}>
         <div>
           <h3>1</h3>
