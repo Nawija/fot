@@ -12,6 +12,7 @@ export default function Hero() {
         alt="..."
         style={{ objectPosition: "50% 75%" }}
         className="-z-10 object-cover"
+        placeholder="blur"
         fill
       />
       <span className="absolute left-0 top-1/2 -translate-x-1/3 -translate-y-1/2 -rotate-90 font-serif text-8xl uppercase tracking-widest text-[#ffffff1f] opacity-55 lg:text-9xl lg:opacity-100">
