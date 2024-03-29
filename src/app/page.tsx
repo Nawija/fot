@@ -6,11 +6,11 @@ export default function Home() {
     <>
       <Hero />
 
-      <p className="text-color ml-auto w-max font-serif text-[1.2rem] font-semibold uppercase tracking-wider xl:text-[6.5rem] xl:tracking-wide">
+      <p className="text-color ml-auto mt-2 w-max font-serif text-[1.3rem] font-bold uppercase tracking-wider lg:mt-8 xl:text-[6.5rem] xl:tracking-wide">
         prawdziwa fotografia
       </p>
 
-      <section className="mx-auto my-24 flex max-w-screen-2xl flex-col items-center space-x-12 lg:my-32 lg:flex-row">
+      <section className="mx-auto my-24 flex max-w-screen-2xl flex-col items-center space-x-12 lg:my-12 lg:flex-row">
         <div className="s-left lg:w-1/2">
           <img src="https://scontent.cdninstagram.com/v/t39.30808-6/393923247_18391204693056005_6708677791160825069_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDExNTIuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=105&_nc_ohc=ulYpoPhAVdEAX8LxdaA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzIxNzczMzQ0Njg5NjE4NTY5MA%3D%3D.2-ccb7-5&oh=00_AfDbal-jr4gLzVLv_dGpJDAFhm8EK83BrZThQrCXdoTNeA&oe=660C65B1&_nc_sid=10d13b" />
         </div>
