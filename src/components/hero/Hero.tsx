@@ -3,21 +3,21 @@ import Link from "next/link";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
 import HeroImage from "../../../public/himg.jpg";
-
 export default function Hero() {
   return (
-    <div className="relative z-0 h-[80vh] w-full">
+    <div className="relative z-0 h-[80vh] w-full bg-zinc-900">
+      <div className="absolute inset-0 left-0 top-0 z-0 h-full w-full bg-black/50" />
       <Image
         src={HeroImage}
         alt="..."
         style={{ objectPosition: "50% 75%" }}
-        className="object-cover"
+        className="-z-10 object-cover"
         fill
       />
       <span className="absolute left-0 top-1/2 -translate-x-1/3 -translate-y-1/2 -rotate-90 font-serif text-8xl uppercase tracking-widest text-[#ffffff1f] opacity-55 lg:text-9xl lg:opacity-100">
         siedlce
       </span>
-      <p className="absolute left-[42%] top-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-5xl uppercase text-white xl:text-8xl">
+      <p className="text-main absolute left-[42%] top-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-5xl uppercase xl:text-8xl">
         Fotograf
         <small className="absolute right-4 top-full -mt-3 text-base tracking-[.1rem] opacity-50 lg:text-xl lg:tracking-[1rem]">
           Jarek Olszewski
