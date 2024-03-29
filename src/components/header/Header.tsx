@@ -16,7 +16,7 @@ export default function Header() {
     setShowMenu(false);
   }
   return (
-    <header className="border-second absolute top-0 z-50 flex w-full items-center justify-between border-b p-4 lg:flex-col lg:justify-center lg:space-y-3 lg:border-none lg:py-10">
+    <header className="absolute top-0 z-50 flex w-full items-center justify-between p-4 lg:flex-col lg:justify-center lg:space-y-3 lg:py-10">
       <Link href="/" className="text-main text-lg md:text-3xl">
         Jarek Olszewski
       </Link>

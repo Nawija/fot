@@ -25,7 +25,7 @@ export default function Hero() {
         </small>
       </p>
       <div className="fixed right-10 top-0 z-[999999] flex flex-col items-center justify-center space-y-3  rounded-3xl text-white">
-        <div className="bg-second  h-40 w-[2px]" />
+        <div className="bg-second h-24 w-[2px] md:h-40" />
         <Link href="/">
           <RiInstagramFill className="text-second hover:text-main text-2xl" />
         </Link>
