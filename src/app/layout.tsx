@@ -20,7 +20,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#262626" />
       </head>
-      <body className={roboto_serif.className}>
+      <body className={`bg-gray-100 ${roboto_serif.className}`}>
         <Header />
         {children}
       </body>

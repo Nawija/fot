@@ -6,7 +6,7 @@ export default function Home() {
     <>
       <Hero />
 
-      <p className="text-color ml-auto mt-2 w-max font-serif text-[1.35rem] font-bold uppercase tracking-wider lg:-mt-20 xl:text-[6.5rem] xl:tracking-wide">
+      <p className="text-color ml-auto mt-2 w-max font-serif text-[1.4rem] font-bold uppercase tracking-wider drop-shadow-md lg:-mt-10 xl:text-[6.5rem] xl:tracking-wide">
         prawdziwa fotografia
       </p>
 
@@ -26,10 +26,16 @@ export default function Home() {
             który zamienił swoją pasje
           </p>
           <div className="flex items-center space-x-6">
-            <Link href="/" className="bg-color px-4 py-2 font-medium">
+            <Link
+              href="/"
+              className="bg-color border-2 border-transparent px-4 py-2 font-medium transition-colors hover:border-gray-500 hover:text-white"
+            >
               Czytaj Więcej
             </Link>
-            <Link href="/" className="bg-gray-200 px-4 py-2 font-medium">
+            <Link
+              href="/"
+              className="hover:text-color hover:border-color border-2 border-transparent bg-gray-200 px-4 py-2 font-medium transition-colors hover:bg-zinc-100"
+            >
               Kontakt
             </Link>
           </div>

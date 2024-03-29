@@ -5,7 +5,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import HeroImage from "../../../public/himg.jpg";
 export default function Hero() {
   return (
-    <div className="relative z-0 h-[80vh] w-full bg-zinc-500">
+    <div className="relative -z-10 h-[80vh] w-full bg-zinc-500">
       <div className="absolute inset-0 left-0 top-0 z-0 h-full w-full bg-black/10" />
       <Image
         src={HeroImage}
