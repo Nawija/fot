@@ -3,6 +3,8 @@
 import { NAVLINKS } from "@/constants/Links";
 import Link from "next/link";
 import { useState } from "react";
+import { CiMenuFries } from "react-icons/ci";
+import { IoClose } from "react-icons/io5";
 
 export default function Header() {
   const [showMenu, setShowMenu] = useState(false);
@@ -11,35 +13,35 @@ export default function Header() {
     setShowMenu(!showMenu);
   }
   return (
-    <header className="absolute top-0 z-50 flex w-full flex-col items-center justify-center space-y-3 p-3 text-white lg:py-10">
+    <header className="border-second lg:border-none absolute top-0 z-50 flex w-full items-center justify-between border-b p-4 lg:flex-col lg:justify-center lg:space-y-3 lg:py-10">
       <Link href="/" className="text-main md:text-3xl">
         Jarek Olszewski
       </Link>
-      <nav className="text-second mx-auto flex max-w-screen-2xl items-center justify-center border-t p-3">
-        <button onClick={handleShowMenu} className="lg:hidden">
-          Men
-        </button>
-        <ul
-          className={`lg: absolute left-0 top-0 z-50 flex h-full w-full -translate-x-full flex-col items-start justify-center space-y-3 bg-gradient-radial from-black to-zinc-900  pl-12 text-start text-[13px] text-lg font-medium  capitalize tracking-wide text-gray-300 opacity-0 transition-all ease-linear lg:relative lg:flex lg:w-max lg:translate-x-0 lg:flex-row lg:items-center lg:space-x-5 lg:space-y-0 lg:bg-none lg:px-0 lg:text-xs lg:opacity-100 ${showMenu ? "translate-x-0 scale-100 opacity-100" : "scale-75 lg:scale-100"}`}
+      <div className="bg-second h-[1px] w-1/2 hidden lg:flex" />
+      <button onClick={handleShowMenu} className="lg:hidden">
+        <CiMenuFries />
+      </button>
+
+      <ul
+        className={`text-second absolute left-0 top-0 z-50 flex h-screen w-full -translate-x-full flex-col items-start justify-center space-y-3 bg-gradient-radial from-black to-zinc-900 pl-12  text-start text-[13px] text-lg font-medium capitalize tracking-wide opacity-0 transition-all ease-linear lg:relative lg:flex lg:h-full lg:w-max lg:translate-x-0 lg:flex-row lg:items-center lg:space-x-5 lg:space-y-0 lg:bg-none lg:px-0 lg:text-xs lg:opacity-100 ${showMenu ? "translate-x-0 opacity-100" : ""}`}
+      >
+        <button
+          className="absolute right-4 top-4 text-3xl lg:hidden"
+          onClick={handleShowMenu}
         >
-          <button
-            className="absolute right-2 top-2 lg:hidden"
-            onClick={handleShowMenu}
-          >
-            X
-          </button>
-          {NAVLINKS.map((link) => (
-            <li>
-              <Link
-                className="hover:text-main p-1 transition-colors"
-                href={link.href}
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+          <IoClose />
+        </button>
+        {NAVLINKS.map((link) => (
+          <li>
+            <Link
+              className="hover:text-main p-1 transition-colors"
+              href={link.href}
+            >
+              {link.label}
+            </Link>
+          </li>
+        ))}
+      </ul>
     </header>
   );
 }

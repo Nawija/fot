@@ -1,9 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
+import { FaSquareFacebook } from "react-icons/fa6";
+import { RiInstagramFill } from "react-icons/ri";
 import HeroImage from "../../../public/himg.jpg";
 
 export default function Hero() {
   return (
-    <div className="relative -z-10 h-[80vh] w-full">
+    <div className="relative z-0 h-[80vh] w-full">
       <Image
         src={HeroImage}
         alt="..."
@@ -11,12 +14,21 @@ export default function Hero() {
         className="object-cover"
         fill
       />
-      <span className="absolute left-0 top-1/2 -translate-x-1/3 -translate-y-1/2 -rotate-90 font-serif text-9xl uppercase tracking-widest text-[#ffffff1f]">
+      <span className="absolute left-0 top-1/2 -translate-x-1/3 -translate-y-1/2 -rotate-90 font-serif text-8xl lg:text-9xl uppercase tracking-widest text-[#ffffff1f] opacity-55 lg:opacity-100">
         siedlce
       </span>
-      <span className="text-main absolute left-[42%] top-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-8xl text-white">
+      <span className="absolute left-[42%] top-1/2 -translate-x-1/2 -translate-y-1/2 font-serif text-3xl uppercase text-white xl:text-8xl">
         Fotograf
       </span>
+      <div className="fixed right-10 top-0 z-[999999] flex flex-col items-center justify-center space-y-3  rounded-3xl text-white">
+        <div className="bg-second  h-40 w-[2px]" />
+        <Link href="/">
+          <RiInstagramFill className="text-second hover:text-main text-2xl" />
+        </Link>
+        <Link href="/">
+          <FaSquareFacebook className="text-second hover:text-main text-2xl" />
+        </Link>
+      </div>
     </div>
   );
 }
