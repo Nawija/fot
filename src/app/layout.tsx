@@ -1,7 +1,7 @@
+import Header from "@/components/header/Header";
 import type { Metadata } from "next";
 import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/header/Header";
 
 const roboto_serif = Roboto_Serif({ subsets: ["latin"] });
 
@@ -17,9 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
+      <head>
+        <meta name="theme-color" content="#080808" />
+      </head>
       <body className={roboto_serif.className}>
         <Header />
-        {children}</body>
+        {children}
+      </body>
     </html>
   );
 }
