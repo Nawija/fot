@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header/Header";
 
-const inter = Inter({ subsets: ["latin"] });
+const roboto_serif = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pl">
-      <body className={inter.className}>
+      <body className={roboto_serif.className}>
         <Header />
         {children}</body>
     </html>
