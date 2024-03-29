@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="pl">
       <head>
-        <meta name="theme-color" content="#3E3E3E" />
+        <meta name="theme-color" content="#262626" />
       </head>
       <body className={roboto_serif.className}>
         <Header />
