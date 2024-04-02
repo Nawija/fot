@@ -1,19 +1,22 @@
-import Image from "next/image";
 import Link from "next/link";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { RiInstagramFill } from "react-icons/ri";
-import HeroImage from "../../../public/himg.jpg";
 export default function Hero() {
   return (
-    <div className="relative -z-10 h-[90vh] w-full bg-zinc-500 lg:h-[80vh]">
-      <div className="absolute inset-0 left-0 top-0 z-0 h-full w-full bg-black/10" />
-      <Image
+    <div className="bg-zinc-500] relative -z-10 h-[90vh] w-full">
+      {/* <div className="absolute inset-0 left-0 top-0 z-0 h-full w-full bg-black/70" /> */}
+      <div className="absolute inset-0 left-0 top-0 z-0 h-full w-full bg-gradient-to-b from-black via-transparent to-white" />
+      {/* <Image
         src={HeroImage}
         alt="..."
         style={{ objectPosition: "50% 75%" }}
         className="-z-10 object-cover"
         placeholder="blur"
         fill
+      /> */}
+      <img
+        src="https://refleksyjni.pl/wp-content/uploads/Fotograf-slubny-ostow-mazowiecka.jpg"
+        className="h-full w-full object-cover object-center"
       />
       <span className="absolute left-0 top-1/2 -translate-x-1/3 -translate-y-1/2 -rotate-90 font-serif text-8xl uppercase tracking-widest text-[#ffffff1f] opacity-55 lg:text-9xl lg:opacity-100">
         siedlce

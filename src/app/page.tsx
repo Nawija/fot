@@ -5,12 +5,41 @@ export default function Home() {
   return (
     <>
       <Hero />
-      {/* <h1 className="mx-auto my-20 max-w-screen-2xl px-4 text-start text-2xl font-semibold tracking-wide text-color lg:text-5xl">
-        Historie uwiecznione obiektywem - Fotograf Siedlce: Tworzenie
-        Niezapomnianych Wspomnień
-      </h1> */}
 
-      <section className="mx-auto my-0 flex max-w-screen-2xl flex-col items-center space-x-4 lg:-mt-12 lg:mb-12 lg:flex-row lg:space-x-12">
+      <section className="mx-auto my-0 flex max-w-screen-xl flex-col items-center space-y-4 lg:mb-12 lg:mt-12 lg:space-y-12">
+        <h1 className="text-center text-4xl font-medium">
+          Uśmiech na mojej twarzy to Wasza zasługa. Jestem szczęśliwym
+          człowiekiem, który zamienił swoją pasje w sposób na życie
+        </h1>
+        <div className="grid grid-cols-3 gap-4">
+          <div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661443474386-b1c19ca8d0de?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661443474386-b1c19ca8d0de?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661443474386-b1c19ca8d0de?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+          <div>
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661443474386-b1c19ca8d0de?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="h-full w-full object-cover object-center"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto my-0 flex max-w-screen-xl flex-col items-center space-x-4 lg:mb-12 lg:mt-48 lg:flex-row lg:space-x-12">
         <div className="s-left lg:w-1/2">
           <img src="https://scontent.cdninstagram.com/v/t39.30808-6/393923247_18391204693056005_6708677791160825069_n.jpg?stp=dst-jpg_e35&efg=eyJ2ZW5jb2RlX3RhZyI6ImltYWdlX3VybGdlbi4xNDQweDExNTIuc2RyIn0&_nc_ht=scontent.cdninstagram.com&_nc_cat=105&_nc_ohc=ulYpoPhAVdEAX8LxdaA&edm=APs17CUAAAAA&ccb=7-5&ig_cache_key=MzIxNzczMzQ0Njg5NjE4NTY5MA%3D%3D.2-ccb7-5&oh=00_AfDbal-jr4gLzVLv_dGpJDAFhm8EK83BrZThQrCXdoTNeA&oe=660C65B1&_nc_sid=10d13b" />
         </div>
@@ -38,35 +67,6 @@ export default function Home() {
             >
               Kontakt
             </Link>
-          </div>
-        </div>
-      </section>
-
-      <section
-        className="my-12 flex items-center justify-center space-x-10 bg-fixed object-cover object-center p-24 lg:my-24"
-        style={{
-          backgroundImage:
-            "url(https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1630358749510-7EK0NBK2NJ9I0ZF7EZR1/IMG_004sesja-narzeczenska-roksana-kamil-fotograf-jarek-olszewski.JPG?format=2500w)",
-        }}
-      >
-        <div className="flex max-w-60 flex-col items-start justify-center pt-2">
-          <div className="relative z-10 h-12 w-full  bg-gray-200">
-            <img
-              className="-mb-12 ml-7 mt-2 h-20 w-20 rounded-full border-4 border-gray-100 object-cover object-center"
-              src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1630358749510-7EK0NBK2NJ9I0ZF7EZR1/IMG_004sesja-narzeczenska-roksana-kamil-fotograf-jarek-olszewski.JPG?format=2500w"
-            />
-            <img
-              className="absolute left-0 top-0 -z-10 h-full w-full border-b-4 border-color object-cover object-center"
-              src="https://images.squarespace-cdn.com/content/v1/5c50e49a620b85ae0e3923e7/1630358749510-7EK0NBK2NJ9I0ZF7EZR1/IMG_004sesja-narzeczenska-roksana-kamil-fotograf-jarek-olszewski.JPG?format=2500w"
-            />
-          </div>
-
-          <div className="space-y-3 bg-white p-7 pt-12 ">
-            <h3 className="font-bold text-black">Sesja Slubna</h3>
-            <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus
-              reprehenderit dolorum quod.
-            </p>
           </div>
         </div>
       </section>
