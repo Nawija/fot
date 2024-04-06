@@ -2,6 +2,7 @@ import Header from "@/components/header/Header";
 import type { Metadata } from "next";
 import { Roboto_Serif } from "next/font/google";
 import "./globals.css";
+import InfoHeader from "@/components/header/InfoHeader";
 
 const roboto_serif = Roboto_Serif({ subsets: ["latin"] });
 
@@ -20,7 +21,8 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#262626" />
       </head>
-      <body className={`bg-gray-100 ${roboto_serif.className}`}>
+      <body className={`mx-auto max-w-screen-2xl relative ${roboto_serif.className}`}>
+        <InfoHeader />
         <Header />
         {children}
       </body>
