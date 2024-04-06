@@ -13,18 +13,40 @@ const Carousel = () => {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    customPaging: function () {
+      return (
+        <div
+          className={`-mt-12 h-4 w-4 rounded-full bg-white/30 hover:bg-white/60 transition-colors`}
+        ></div>
+      );
+    },
   };
 
   return (
     <Slider {...settings}>
+      <div className="relative h-[600px] w-full px-32">
+        <Image
+          src={img1}
+          alt="..."
+          fill
+          className="object-cover object-center"
+        />
+      </div>
       <div className="relative h-[600px] w-full">
-        <Image src={img1} alt="..." fill className="object-center object-cover" />
+        <Image
+          src={img1}
+          alt="..."
+          fill
+          className="object-cover object-center"
+        />
       </div>
-      <div>
-        <h3>Slide 2</h3>
-      </div>
-      <div>
-        <h3>Slide 3</h3>
+      <div className="relative h-[600px] w-full">
+        <Image
+          src={img1}
+          alt="..."
+          fill
+          className="object-cover object-center"
+        />
       </div>
     </Slider>
   );
