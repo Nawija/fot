@@ -1,10 +1,10 @@
-import Hero from "@/components/hero/Hero";
+import Hero from "@";
 import Carousel from "@/components/react/Carouzel";
 
 export default function Home() {
   return (
     <>
-      <Hero title="fotograf" />
+      {/* <Hero title="fotograf" /> */}
       <Carousel />
     </>
   );
