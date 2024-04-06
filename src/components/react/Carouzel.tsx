@@ -4,19 +4,24 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-import img1 from "../../../public/himg.jpg";
+import img3 from "../../../public/himg.jpg";
+import img1 from "../../../public/x1.jpg";
+import img2 from "../../../public/x2.jpg";
 
 const Carousel = () => {
   const settings = {
     dots: true,
+    autoplay: true,
+    speed: 300,
+    centerPadding:"200px",
+    autoplaySpeed: 3200,
     infinite: true,
-    speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
     customPaging: function () {
       return (
         <div
-          className={`-mt-12 h-4 w-4 rounded-full bg-white/30 hover:bg-white/60 transition-colors`}
+          className={`-mt-12 h-3 w-3 rounded-full bg-white/30 transition-colors hover:bg-white/60`}
         ></div>
       );
     },
@@ -24,7 +29,7 @@ const Carousel = () => {
 
   return (
     <Slider {...settings}>
-      <div className="relative h-[600px] w-full px-32">
+      <div className="relative h-[600px]">
         <Image
           src={img1}
           alt="..."
@@ -32,17 +37,17 @@ const Carousel = () => {
           className="object-cover object-center"
         />
       </div>
-      <div className="relative h-[600px] w-full">
+      <div className="relative h-[600px]">
         <Image
-          src={img1}
+          src={img2}
           alt="..."
           fill
           className="object-cover object-center"
         />
       </div>
-      <div className="relative h-[600px] w-full">
+      <div className="relative h-[600px]">
         <Image
-          src={img1}
+          src={img3}
           alt="..."
           fill
           className="object-cover object-center"
