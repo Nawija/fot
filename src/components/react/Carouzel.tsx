@@ -1,19 +1,20 @@
 "use client";
+
 import Image from "next/image";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick-theme.css";
+// import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-import img3 from "../../../public/himg.jpg";
 import img1 from "../../../public/x1.jpg";
 import img2 from "../../../public/x2.jpg";
 
 const Carousel = () => {
+
   const settings = {
     dots: true,
+    arrows: false,
     autoplay: true,
-    speed: 300,
-    centerPadding:"200px",
+    speed: 500,
     autoplaySpeed: 3200,
     infinite: true,
     slidesToShow: 1,
@@ -21,15 +22,16 @@ const Carousel = () => {
     customPaging: function () {
       return (
         <div
-          className={`-mt-12 h-3 w-3 rounded-full bg-white/30 transition-colors hover:bg-white/60`}
+          className={`flex items-center justify-center h-3 w-3 rounded-full z-10 bg-white/30 transition-colors hover:bg-white/60`}
         ></div>
       );
     },
   };
 
   return (
+    <>
     <Slider {...settings}>
-      <div className="relative h-[600px]">
+      <div className="relative min-h-44 max-h-[600px]">
         <Image
           src={img1}
           alt="..."
@@ -37,7 +39,7 @@ const Carousel = () => {
           className="object-cover object-center"
         />
       </div>
-      <div className="relative h-[600px]">
+      <div className="relative min-h-44 max-h-[600px]">
         <Image
           src={img2}
           alt="..."
@@ -45,15 +47,9 @@ const Carousel = () => {
           className="object-cover object-center"
         />
       </div>
-      <div className="relative h-[600px]">
-        <Image
-          src={img3}
-          alt="..."
-          fill
-          className="object-cover object-center"
-        />
-      </div>
     </Slider>
+
+    </>
   );
 };
 
