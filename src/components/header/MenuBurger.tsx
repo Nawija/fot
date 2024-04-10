@@ -1,9 +1,12 @@
-export default function MenuBurger() {
+export default function MenuBurger({ handleShowMenu }) {
   return (
-    <button className="flex flex-col items-center justify-center p-2 space-y-1.5 lg:hidden">
-      <div className="h-px w-4 bg-black" />
-      <div className="h-px w-4 bg-black" />
-      <div className="h-px w-4 bg-black" />
+    <button
+      onClick={handleShowMenu}
+      className="z-[999] flex flex-col items-center justify-center space-y-1.5 p-1 lg:hidden"
+    >
+      <div className="h-px w-4 bg-white" />
+      <div className="h-px w-4 bg-white" />
+      <div className="h-px w-4 bg-white" />
     </button>
   );
 }

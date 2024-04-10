@@ -13,7 +13,7 @@ export default function Home() {
           <div className="absolute w-full h-full top-0 left-0 bg-white/10 -z-10 blur-3xl" />
           <div>
             <h2 className="text-sm tracking-widest">Fotograf Siedlce</h2>
-            <p className=" text-4xl tracking-wider font-bold my-1">Miło Cię widzieć</p>
+            <p className=" lg:text-4xl text-2xl tracking-wider font-bold my-1 w-max">Miło Cię widzieć</p>
             <p className="text-sm tracking-widest">Jarosław</p>
           </div>
           <h1 className="text-white/60">
