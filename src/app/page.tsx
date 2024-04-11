@@ -1,18 +1,22 @@
 import Image from "next/image";
+import { IoMdArrowDropdown } from "react-icons/io";
 import hero from "../../public/119042024_960861011082618_6769876556572508169_n.jpg";
 
 export default function Home() {
   return (
     <>
-      {/* <Carousel /> */}
-      <div className="relative h-[90vh] w-full overflow-hidden">
-        <div className=" h-full w-full left-0 top-0 fixed overflow-hidden -z-10">
+      <div className="relative h-[80vh] w-full overflow-hidden lg:h-[90vh]">
+        <div className="absolute bottom-12 left-1/2 z-20 -translate-x-1/2 -translate-y-1/2">
+          <IoMdArrowDropdown className="animate-bounce text-3xl text-white" />
+        </div>
+        <div className="left-0 top-0 -z-20 h-full w-full overflow-hidden lg:fixed">
           <Image
             src={hero}
             alt="..."
             fill={true}
             className="object-cover object-bottom"
           />
+          {/* <Carousel /> */}
         </div>
         <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/60" />
 

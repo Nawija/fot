@@ -1,9 +1,7 @@
 import Header from "@/components/header/Header";
 import type { Metadata } from "next";
-import { Roboto_Serif } from "next/font/google";
+import { raleway } from "@/fonts";
 import "./globals.css";
-
-const roboto_serif = Roboto_Serif({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Fot",
@@ -20,7 +18,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={`bg-white ${roboto_serif.className}`}>
+      <body className={`bg-white ${raleway.className}`}>
         {/* <InfoHeader /> */}
         <Header />
         {children}

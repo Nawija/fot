@@ -9,20 +9,19 @@ import img1 from "../../../public/x1.jpg";
 import img2 from "../../../public/x2.jpg";
 
 const Carousel = () => {
-
   const settings = {
     dots: true,
     arrows: false,
     autoplay: true,
-    speed: 500,
-    autoplaySpeed: 3200,
+    speed: 4000,
+    autoplaySpeed: 0,
     infinite: true,
-    slidesToShow: 1,
-    slidesToScroll: 1,
+    slidesToShow: 4,
+    slidesToScroll: 2,
     customPaging: function () {
       return (
         <div
-          className={`flex items-center justify-center h-3 w-3 rounded-full z-10 bg-white/30 transition-colors hover:bg-white/60`}
+          className={`z-10 flex h-3 w-3 items-center justify-center rounded-full bg-white/30 transition-colors hover:bg-white/60`}
         ></div>
       );
     },
@@ -30,25 +29,56 @@ const Carousel = () => {
 
   return (
     <>
-    <Slider {...settings}>
-      <div className="relative min-h-44 max-h-[600px]">
-        <Image
-          src={img1}
-          alt="..."
-          fill
-          className="object-cover object-center"
-        />
-      </div>
-      <div className="relative min-h-44 max-h-[600px]">
-        <Image
-          src={img2}
-          alt="..."
-          fill
-          className="object-cover object-center"
-        />
-      </div>
-    </Slider>
-
+      <Slider {...settings}>
+        <div className="relative h-52 w-52">
+          <Image
+            src={img1}
+            alt="..."
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="relative h-52 w-52">
+          <Image
+            src={img1}
+            alt="..."
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="relative h-52 w-52">
+          <Image
+            src={img1}
+            alt="..."
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="relative h-52 w-52">
+          <Image
+            src={img1}
+            alt="..."
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="relative h-52 w-52">
+          <Image
+            src={img1}
+            alt="..."
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+        <div className="relative h-52 w-52">
+          <Image
+            src={img2}
+            alt="..."
+            fill
+            className="object-cover object-center"
+          />
+        </div>
+      </Slider>
     </>
   );
 };
