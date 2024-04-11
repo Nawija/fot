@@ -1,6 +1,6 @@
 import Header from "@/components/header/Header";
-import type { Metadata } from "next";
 import { raleway } from "@/fonts";
+import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={`bg-white ${raleway.className}`}>
+      <body className={`bg-black ${raleway.className}`}>
         {/* <InfoHeader /> */}
         <Header />
         {children}
