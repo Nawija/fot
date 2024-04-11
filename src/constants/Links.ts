@@ -1,9 +1,5 @@
 export const NAVLINKS = [
   {
-    label: "start",
-    href: "/",
-  },
-  {
     label: "fotografia ślubna",
     href: "/",
   },
@@ -21,10 +17,6 @@ export const NAVLINKS = [
   },
   {
     label: "kontakt",
-    href: "/",
-  },
-  {
-    label: "strefa klienta",
     href: "/",
   },
 ];

@@ -21,12 +21,12 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#262626" />
       </head>
-      <body className={`${roboto_serif.className}`}>
+      <body className={`bg-white ${roboto_serif.className}`}>
         {/* <InfoHeader /> */}
         <Header />
         {children}
 
-        <div className="h-[200vh]" />
+        <div className="h-[200vh] bg-white w-full z-10" />
       </body>
     </html>
   );
