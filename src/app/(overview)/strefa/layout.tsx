@@ -25,7 +25,7 @@ export default function RootLayout({
       <section className="mx-auto mt-10 lg:mt-20 flex lg:flex-row flex-col max-w-screen-2xl items-start justify-start">
         <div className="flex lg:flex-col items-start justify-start lg:space-x-0 space-x-4 lg:space-y-3 bg-gray-100 px-10 lg:px-12 py-8 overflow-x-scroll lg:overflow-hidden w-full lg:w-auto whitespace-nowrap">
           {NAVLINKS.map((link) => (
-            <p className="w-max">{link.label}</p>
+            <p key={link.label} className="w-max">{link.label}</p>
           ))}
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 px-2 lg:pl-12 w-full gap-2">{children}</div>
