@@ -1,11 +1,11 @@
 "use client";
 
-import { ClassNameProps } from "@/types/types";
+import { ClassNameProps, HandleCloseMenuProps } from "@/types/types";
 import Link from "next/link";
 
 export default function StrefaKlienta(
   { className }: ClassNameProps,
-  { handleCloseMenu }: any,
+  { handleCloseMenu }: HandleCloseMenuProps,
 ) {
   return (
     <Link
