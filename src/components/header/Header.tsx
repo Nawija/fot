@@ -56,7 +56,7 @@ export default function Header() {
           }`}
         />
         <ul
-          className={`absolute left-0 top-full flex h-screen w-full flex-col items-center justify-center space-y-8 bg-gray-200 text-lg font-semibold transition-all duration-300 lg:left-1/2 lg:top-1/2 lg:w-max lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex-row lg:space-x-6 lg:space-y-0 lg:bg-transparent lg:text-sm lg:font-normal lg:capitalize text-gray-800 lg:text-black ${
+          className={`absolute left-0 top-full flex h-screen w-full flex-col items-center justify-center space-y-8 bg-gray-200 text-lg font-semibold text-gray-800 transition-all duration-300 lg:left-1/2 lg:top-1/2 lg:w-max lg:-translate-x-1/2 lg:-translate-y-1/2 lg:flex-row lg:space-x-6 lg:space-y-0 lg:bg-transparent lg:text-sm lg:font-normal lg:capitalize lg:text-black ${
             showMenu
               ? "translate-x-0 opacity-100 "
               : "-translate-x-full opacity-0 lg:opacity-100"
@@ -71,7 +71,10 @@ export default function Header() {
               {link.label}
             </li>
           ))}
-          <StrefaKlienta className="lg:hidden" />
+          <StrefaKlienta
+            handleCloseMenu={handleCloseMenu}
+            className="lg:hidden"
+          />
         </ul>
       </div>
     </header>
