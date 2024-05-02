@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function StrefaKlienta({ className }: ClassNameProps) {
   return (
-    <Link href="/strefa" className={`${className} bg-color border  px-4 py-2 text-sm`}>
+    <Link href="/strefa" className={`${className} bg-color border text-white font-semibold px-4 py-2 text-sm`}>
       Strefa Klienta
     </Link>
   );

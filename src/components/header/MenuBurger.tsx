@@ -4,7 +4,7 @@ export default function MenuBurger({
   handleShowMenu,
   showMenu,
 }: MenuBurgerProps) {
-  const burgerClass = "h-px w-4 bg-white duration-300";
+  const burgerClass = "h-px w-4 bg-black duration-300";
 
   return (
     <button

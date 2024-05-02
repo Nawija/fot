@@ -19,14 +19,14 @@ export default function RootLayout({
       <head>
         <meta name="theme-color" content="#000000" />
       </head>
-      <body className={`bg-black ${raleway.className}`}>
+      <body className={`${raleway.className}`}>
         <NextTopLoader
           color="#9C916A"
           initialPosition={0.08}
           crawlSpeed={200}
-          height={3.3}
+          height={3}
           crawl={true}
-          showSpinner={false}
+          showSpinner={true}
           easing="ease"
           speed={200}
           shadow="0 0 25px #9C916A,0 0 15px #9C916A"

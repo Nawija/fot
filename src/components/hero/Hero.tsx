@@ -1,36 +1,38 @@
 import Image from "next/image";
-import { BiSolidChevronDown } from "react-icons/bi";
-import hero from "../../../public/119042024_960861011082618_6769876556572508169_n.jpg";
+import Link from "next/link";
+import hero from "../../../public/119042024_960861011082618_6769876556572508169_n.jpg"
 export default function Hero() {
   return (
-    <div className="relative h-[80vh] w-full overflow-hidden lg:h-[88vh]">
-      <div className="left-0 top-0 -z-20 h-full w-full overflow-hidden ">
+    <div className="relative h-[80vh] w-full overflow-hidden px-4 lg:h-[75vh]">
+      <div className="relative  -z-10 h-full  w-full overflow-hidden rounded-lg">
         <Image
           src={hero}
           alt="..."
           fill={true}
-          className="object-cover object-bottom"
+          className="object-cover object-bottom -z-10"
         />
-        <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/60" />
-        <div className="absolute left-1/2 top-[76vh] z-20 -translate-x-1/2 -translate-y-1/2 lg:top-[84vh]">
-          <BiSolidChevronDown className="animate-bounce text-2xl text-white" />
-        </div>
+        <div className="absolute left-0 top-0 z-10 h-full w-full bg-black/20" />
       </div>
 
-      <div className="absolute left-1/2 top-1/2 z-20 flex max-w-screen-md -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center space-y-4 rounded-xl border border-white/20 p-12 text-center text-white/80">
-        <div className="absolute left-0 top-0 -z-10 h-full w-full bg-white/10 blur-3xl" />
+      <div className="z-10 flex flex-col items-center justify-center space-y-4 text-white">
         <div>
-          <h2 className="text-sm tracking-widest">Fotograf Siedlce</h2>
-          <p className=" my-1 w-max text-2xl font-bold tracking-wider lg:text-4xl">
+          <p className="text-sm tracking-widest">Fotograf Siedlce</p>
+          <h1 className=" my-1 w-max text-2xl font-semibold tracking-wider lg:text-6xl">
             Miło Cię widzieć
-          </p>
+          </h1>
           <p className="text-sm tracking-widest">Jarosław</p>
         </div>
-        <h1 className="text-white/60">
+        <h2 className="text-white/70">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea facere
           soluta quidem voluptate at illum excepturi repellat. Veritatis eius
           sunt asperiores ipsam?
-        </h1>
+        </h2>
+        <Link
+          href="/"
+          className="z-10 mt-6 bg-white px-6 py-2 text-sm font-semibold uppercase tracking-wider text-black"
+        >
+          Więcej
+        </Link>
       </div>
     </div>
   );
