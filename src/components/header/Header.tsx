@@ -35,8 +35,8 @@ export default function Header() {
 
   return (
     <header
-      className={`${raleway.className} fixed top-0 z-[999] w-full text-white transition-all duration-500 py-10 ${
-        showMenu || isScrolled ? "bg-black/60 backdrop-blur-xl py-1" : ""
+      className={`${raleway.className} fixed top-0 z-[999] w-full text-white transition-all duration-500 ${
+        showMenu || isScrolled ? "bg-black/90 py-1" : "py-10"
       }`}
     >
       <div className="z-50 mx-auto flex max-w-screen-2xl items-center justify-between px-7 py-3">
@@ -44,7 +44,7 @@ export default function Header() {
           href="/"
           className={` ${nanum_gothic.className} text-lg lg:text-2xl`}
         >
-          Jarek Olszewski
+          J<span className={`${isScrolled ? "":""}`}>arek</span> Olszewski
         </Link>
         <MenuBurger handleShowMenu={handleShowMenu} showMenu={showMenu} />
         <StrefaKlienta className="hidden lg:block" />
