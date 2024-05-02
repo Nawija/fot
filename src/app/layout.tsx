@@ -1,6 +1,7 @@
 import Header from "@/components/header/Header";
 import { raleway } from "@/fonts";
 import type { Metadata } from "next";
+import NextTopLoader from "nextjs-toploader";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -19,7 +20,19 @@ export default function RootLayout({
         <meta name="theme-color" content="#000000" />
       </head>
       <body className={`bg-black ${raleway.className}`}>
-        {/* <InfoHeader /> */}
+        <NextTopLoader
+          color="#9C916A"
+          initialPosition={0.08}
+          crawlSpeed={200}
+          height={3.3}
+          crawl={true}
+          showSpinner={false}
+          easing="ease"
+          speed={200}
+          shadow="0 0 25px #9C916A,0 0 15px #9C916A"
+          zIndex={1600}
+          showAtBottom={false}
+        />
         <Header />
         {children}
 

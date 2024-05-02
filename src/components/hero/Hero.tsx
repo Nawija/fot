@@ -4,7 +4,7 @@ import hero from "../../../public/119042024_960861011082618_6769876556572508169_
 export default function Hero() {
   return (
     <div className="relative h-[80vh] w-full overflow-hidden lg:h-[88vh]">
-      <div className="left-0 top-0 -z-20 h-full w-full overflow-hidden lg:fixed ">
+      <div className="left-0 top-0 -z-20 h-full w-full overflow-hidden ">
         <Image
           src={hero}
           alt="..."

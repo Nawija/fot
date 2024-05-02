@@ -35,8 +35,8 @@ export default function Header() {
 
   return (
     <header
-      className={`${raleway.className} fixed top-0 z-[999] w-full text-white transition-all duration-500 py-4 lg:py-12 ${
-        showMenu || isScrolled ? "bg-black/60 backdrop-blur-xl py-0 lg:py-1" : ""
+      className={`${raleway.className} fixed top-0 z-[999] w-full text-white transition-all duration-500 py-12 ${
+        showMenu || isScrolled ? "bg-black/60 backdrop-blur-xl py-0 " : ""
       }`}
     >
       <div className="z-50 mx-auto flex max-w-screen-2xl items-center justify-between px-7 py-3">
